@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+@media (max-width: 1199px) {
+	.cart-test__body {
+		gap: 30px;
+		grid-template-columns: 1.3fr 1fr;
+	}
+}
+
+@media (max-width: 991px) {
+	.cart-test {
+		grid-template-columns: 100%;
+	}
+
+	.cart-test__title {
+		font-size: 28px;
+	}
+
+	.cart-test__menu {
+		display: none;
+	}	
+}
+
+@media (max-width: 767px) {
+	.cart-test__body {
+		grid-template-columns: 100%;
+	}
+}

@@ -1,0 +1,153 @@
+@use './variables' as *;
+
+.cart-test__info {
+	display: flex;
+	flex-direction: column;
+
+	[data-tabs-content] {
+		flex-grow: 1;
+
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.cart-test__category {
+	color: $colorGrey;
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.cart-test__controls {
+	display: flex; 
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	color: $colorGrey;
+}
+
+.cart-test__comment {
+	display: flex; 
+	align-items: center;
+	gap: 10px;
+
+	img {
+		width: 24px;
+		height: auto;   
+	}
+}
+
+.cart-test__fav {
+	cursor: pointer;
+
+	input {
+		display: none;
+	}
+
+	svg {
+		width: 24px;
+		height: auto;
+		transition: .3s;
+	}
+
+	&:hover {
+		svg {
+			stroke: $colorGreen;
+		}
+	}
+
+	&:has(:checked) {
+		svg {
+			stroke: $colorGreen;
+			fill: $colorGreen
+		}
+	}
+}
+
+.cart-test__title {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 0.7em;
+}
+
+.cart-test__weight {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin: 15px 0;
+
+	[data-tabs] {
+		padding: 0 10px;
+		min-width: 98px;
+		width: min-content;
+		height: 45px;
+		border-radius: 10px;
+		border: 2px solid $colorGreen;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 500;
+		font-size: 18px;
+		transition: .3s;
+
+		&.active, &:hover {
+			background: $colorGreen;
+			color: #fff;
+		}
+	}
+}
+
+.cart-test__number {
+	color: $colorGrey;
+	font-size: 16px;
+}
+
+.cart-test__buy {
+	margin-top: auto;
+}
+
+.cart-test__cost {
+	font-size: 28px;
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: .5em;
+
+	span, p {
+		&::after {
+			content: '₽';
+			margin-left: 0.4em;
+		}
+	}
+
+	span {
+		text-decoration: line-through;
+		color: $colorGrey;
+	}
+
+	p {
+		font-weight: 700;
+		color: $colorGreen;
+	}
+}
+
+.cart-cost__pay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid $colorGreen;
+	border-radius: 15px;
+	height: 65px;
+	width: 100%;
+	background: $colorGreen;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+	margin-top: .7em;
+
+	&:hover {
+		background: #fff;
+		color: $colorGrey;
+	}
+}

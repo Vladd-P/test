@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Карточка товара</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./assets/css/fancybox.css" />
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+	<div class="cart-test">
+		<div class="cart-test__body">
+			<div class="cart-test__gallery">
+				<div class="cart-test__gal-big swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./assets/img/tea-1.webp" class="cart-test__gal-img" alt="" data-fancybox-img="data-test" data-src="./assets/img/tea-big-1.webp">
+							<img src="./assets/img/ico/zoom.svg" class="cart-test__gal-zoom" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/tea-2.webp" class="cart-test__gal-img" alt="" data-fancybox-img="data-test" data-src="/assets/img/tea-big-2.webp">
+							<img src="./assets/img/ico/zoom.svg" class="cart-test__gal-zoom" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/tea-3.webp" class="cart-test__gal-img" alt="" data-fancybox-img="data-test" data-src="/assets/img/tea-big-3.webp">
+							<img src="./assets/img/ico/zoom.svg" class="cart-test__gal-zoom" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/tea-4.webp" class="cart-test__gal-img" alt="" data-fancybox-img="data-test" data-src="/assets/img/tea-big-4.webp">
+							<img src="./assets/img/ico/zoom.svg" class="cart-test__gal-zoom" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/tea-5.webp" class="cart-test__gal-img" alt="" data-fancybox-img="data-test" data-src="/assets/img/tea-big-5.webp">
+							<img src="./assets/img/ico/zoom.svg" class="cart-test__gal-zoom" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="cart-test__gal-thumb swiper">
+					<div class="swiper-wrapper">
+						<img src="./assets/img/tea-thumbs-1.webp" alt="" class="swiper-slide">
+						<img src="./assets/img/tea-thumbs-2.webp" alt="" class="swiper-slide">
+						<img src="./assets/img/tea-thumbs-3.webp" alt="" class="swiper-slide">
+						<img src="./assets/img/tea-thumbs-4.webp" alt="" class="swiper-slide">
+						<img src="./assets/img/tea-thumbs-5.webp" alt="" class="swiper-slide">
+					</div>
+					<img src="./assets/img/ico/nav.svg" class="swiper-button-prev" alt="">
+					<img src="./assets/img/ico/nav.svg" class="swiper-button-next" alt="">					
+				</div>
+			</div>
+
+			<div class="cart-test__info">
+				<div class="cart-test__category">
+					Улун
+				</div>
+				<div class="cart-test__controls">
+					<a href="#" class="cart-test__comment">
+						<img src="assets/img/ico/comment.svg" alt="">
+						Оставить отзыв
+					</a>
+					<label class="cart-test__fav">
+						<input type="checkbox">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+						</svg>						
+					</label>					
+				</div>
+				<div class="cart-test__title">
+					Ананасовый улун
+				</div>
+				<p>Состав: китайский бирюзовый чай, цукаты, натуральные ароматические масла. Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь. В прогретой посуде аромат свежей, весенней зелени и спелого ананаса. </p>
+
+				<div class="cart-test__weight">
+					<span class="active" data-tabs="cart-test" data-tab-target="w100">100 г</span>
+					<span data-tabs="cart-test" data-tab-target="w500">500 г</span>
+					<span data-tabs="cart-test" data-tab-target="w1000">1000 г</span>
+					<span data-tabs="cart-test" data-tab-target="w5000">5000 г</span>
+				</div>
+
+				<div class="active" id="w100" data-tabs-content="cart-test">
+					<div class="cart-test__number">арт: 01306</div>
+					<div class="cart-test__buy">
+						<div class="cart-test__cost">
+							<span>349,20</span>
+							<p>326,40</p>
+						</div>					
+					</div>
+				</div>
+
+				<div id="w500" data-tabs-content="cart-test">
+					<div class="cart-test__number">арт. 01307</div>
+					<div class="cart-test__buy">
+						<div class="cart-test__cost">
+							<span>1 646</span>
+							<p>1 432</p>
+						</div>					
+					</div>
+				</div>
+
+				<div id="w1000" data-tabs-content="cart-test">
+					<div class="cart-test__number">арт. 01308</div>
+					<div class="cart-test__buy">
+						<div class="cart-test__cost">
+							<span>2 592</span>
+							<p>2 064</p>
+						</div>					
+					</div>
+				</div>
+
+				<div id="w5000" data-tabs-content="cart-test">
+					<div class="cart-test__number">арт:  01309</div>
+					<div class="cart-test__buy">
+						<div class="cart-test__cost">
+							<span>8 710</span>
+							<p>6 320</p>
+						</div>					
+					</div>
+				</div>
+				<button class="cart-cost__pay">В корзину</button>	
+			</div>
+		</div>
+		<div class="cart-test__menu">здесь меню</div>
+	</div>
+
+	<script src="./assets/js/swiper-bundle.min.js"></script>
+	<script src="./assets/js/fancybox.umd.js"></script>
+	<script src="./assets/js/custom.js"></script>
+</body>
+</html>
